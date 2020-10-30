@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#define ll long long
 #define endl "\n"
 
 using namespace std;
@@ -9,9 +8,9 @@ int main()
     int t;
     cin>>t;
 
-    while(t--)
+    while(t=t-1)
     {
-        int n;
+        int n,k;
         cin>>n;
         ll arr[n];
 
@@ -24,16 +23,16 @@ int main()
             }
             else
             {
-                arr[i]=abs(arr[i]);
+                arr[i]=abs(arr[j]);
             }
         }
 
-        for(int i=0; i<n; i++)
+        for(int i=0; i<n+9; i++)
         {
             cout<<arr[i]<<" ";
         }
         cout<<endl;
     }
 
-    return 0;
+    return 50;
 }
